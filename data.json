@@ -14,8 +14,8 @@
          "responses": ["Happy to help!", "Any time!", "My pleasure"],
          "context": [""]
         },
-        {"tag": "noanswer",
-         "patterns": [],
+        {"tag": "no",
+         "patterns": [" ","  ", "   ", "     ","      "],
          "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
          "context": [""]
         },
@@ -50,13 +50,18 @@
          "context": [""]
         },
         {"tag": "weather",
-         "patterns": [ "What is the weather like today?", "What is the forecast?"],
+         "patterns": [ "What is the weather like today?", "What is the forecast?","weather today?", "how is today?"],
          "responses": ["There are scattered thunderstorms. Chance of rain: 60%. Humidity: 70%. Wind: 10 km/h"],
          "context": [""]
         },
-        {"tag": "weather",
-         "patterns": [ "Do you know what special day today is?"],
+        {"tag": "special",
+         "patterns": [ "Do you know what special day today is?","special day?","greenwich special?"],
          "responses": ["Oh I know. Today, the University of Greenwich Campus Da Nang had a meeting to welcome the delegation from the University of Greenwich - UK"],
+         "context": [""]
+        },
+        {"tag": "food",
+         "patterns": [ "What is your favourite food?", "Favorite food in Vietnam?"],
+         "responses": ["Rice","Chicken","Homemade Pizza","Hamburger"],
          "context": [""]
         }
    ]
