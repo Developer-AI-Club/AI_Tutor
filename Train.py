@@ -12,11 +12,11 @@ import random
 import json
 import pickle
 
+
 #the data for bot is in json file and need to open it with file
 with open("data.json") as file:
     data = json.load(file)
 
-engine = pyttsx3.init()
 
 try:
     with open("databot.pkl","rd") as f:
@@ -95,8 +95,8 @@ net = tflearn.regression(net)
 
 model = tflearn.DNN(net)
 
-model.fit(training_bot_data, out, n_epoch=600, batch_size=2, show_metric=True)
-model.save("Bot.AI")
+# model.fit(training_bot_data, out, n_epoch=600, batch_size=2, show_metric=True)
+# model.save("Bot.AI")
 model.load("Bot.AI")
 def bag_words(s, words):
 
@@ -123,6 +123,6 @@ def chat():
                 responses = tg['responses']
 
 
-        engine.say(random.choice(responses))
-        engine.runAndWait()
-
+        # engine.say(random.choice(responses))
+        # engine.runAndWait()
+        print(random.choice(responses))
