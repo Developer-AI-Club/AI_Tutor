@@ -1,63 +1,17 @@
- {"intents": [
-        {"tag": "greeting",
-         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
-         "responses": ["Hello, thanks for asking", "Good to see you again", "Hi there, how can I help?"],
-         "context": [""]
-        },
-        {"tag": "goodbye",
-         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
-         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
-         "context": [""]
-        },
-        {"tag": "thanks",
-         "patterns": ["Thanks", "Thank you", "That is helpful", "Awesome, thanks", "Thanks for helping me"],
-         "responses": ["Happy to help!", "Any time!", "My pleasure"],
-         "context": [""]
-        },
-        {"tag": "noanswer",
-         "patterns": [],
-         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
-         "context": [""]
-        },
-        {"tag": "options",
-         "patterns": ["How you could help me?", "What you can do?", "What help you provide?", "How you can be helpful?", "What support is offered"],
-         "responses": ["I can guide you through some courses"],
-         "context": [""]
-        },
-        {"tag": "name",
-         "patterns": ["What is your name?", "What name?", "How can I address you?", "How do I call you?", "Tell me about your name?" ],
-         "responses": ["I'm an AI tutor, you can call me Sarah",  "Sarah is my name", "You can call me Sarah"],
-         "context": [""]
-        },
-        {"tag": "tutor",
-         "patterns": ["teach me please", "teach me some course", "can you tutor me", "give me some lectures", "teach me now" ],
-         "responses": ["what subject do you want to learn?", "Tell me about the subject please?", "Provide the subject please?"],
-         "context": [""]
-        },
-        {"tag": "lecture",
-         "patterns": ["I want to learn the neural network", "The neural network please!", "How about neural network?", "neural network", "deep learning"],
-         "responses": ["Loading knowledge :: neural network"],
-         "context": ["tutor"]
-        },
-        {"tag": "neural network",
-         "patterns": ["what is AI?", "I do not understand about artificial intelligence", "I have no idea about AI"],
-         "responses": ["Loading knowledge :: AI"],
-         "context": ["tutor", "lecture"]
-        },
-        {"tag": "age",
-         "patterns": [ "how old are you?", "what is your age?"],
-         "responses": ["I'm not sure. You know that AI has been invented since 1956", "I have no idea. But Nguyet has just modified me last night"],
-         "context": [""]
-        },
-        {"tag": "weather",
-         "patterns": [ "What is the weather like today?", "What is the forecast?"],
-         "responses": ["There are scattered thunderstorms. Chance of rain: 60%. Humidity: 70%. Wind: 10 km/h"],
-         "context": [""]
-        },
-        {"tag": "weather",
-         "patterns": [ "Do you know what special day today is?"],
-         "responses": ["Oh I know. Today, the University of Greenwich Campus Da Nang had a meeting to welcome the delegation from the University of Greenwich - UK"],
-         "context": [""]
-        }
-   ]
+{"data" : [
+    {
+      "keywords": [
+        "hello",
+        "hi"
+      ],
+      "response": "Hello! How can I help you today?"
+    },
+    {
+      "keywords": [
+        "favorite",
+        "color"
+      ],
+      "response": "My favorite color is blue."
+    }
+  ]
 }
