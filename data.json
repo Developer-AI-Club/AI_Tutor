@@ -1,0 +1,17 @@
+{"data" : [
+    {
+      "keywords": [
+        "hello",
+        "hi"
+      ],
+      "response": "Hello! How can I help you today?"
+    },
+    {
+      "keywords": [
+        "favorite",
+        "color"
+      ],
+      "response": "My favorite color is blue."
+    }
+  ]
+}
